@@ -1,6 +1,8 @@
 ## Notas
 El docker compose utilizado fue docker-compose.prod.yml
-Al cargar el repositorio en VS Code el archivo .inv tenia una palabra al final (Ejemplo: .inv.prom) por lo cual al ejecutar el docker compose no lo detectaba ya que el nombre original era .inv, se tuvo que renombrar el archivo y una vez hecho eso y despues de ejecutar el comando docker compose up --build los servicios empezaban a descargar sus complementos asi como se asignaban los puertos y las credenciales de MySQL
+Al cargar el repositorio en VS Code el archivo .env tenia una palabra al final (.env.template) por lo cual al ejecutar el docker compose no lo detectaba ya que el nombre original era .env, se tuvo que renombrar el archivo y una vez hecho eso y despues de ejecutar el comando docker compose up --build los servicios empezaban a descargar sus complementos asi como se asignaban los puertos y las credenciales de MySQL
+
+## Archivo .ENV
 
 ## Docker Compose Nodejs MysqL
 
