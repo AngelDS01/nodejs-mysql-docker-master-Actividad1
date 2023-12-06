@@ -1,6 +1,7 @@
 ## ARCHIVO UTILIZADO PARA LA EJECUCION DEL DOCKER COMPOSE 
 version: "3.8"
-
+## El archivo no fue alterado, las versiones usadas en el tutorial fueron dejadas 
+## Las variables de entorno no sufrieron ningun cambio al considerarse que no era tan relevante la modificacion de estas 
 services:
   mysqldb:
     image: mysql:5.7
@@ -14,7 +15,7 @@ services:
       - $MYSQLDB_LOCAL_PORT:$MYSQLDB_DOCKER_PORT
     logging:
       driver: none
-
+## NOTA EXTRA: MI COMPUTADORA ME MARCA ERROR AL USAR EL PUERTO 8080 POR ESO SIEMPRE TENGO QUE CAMBIAR EL ULTIMO NUMERO PARA QUE ME PUEDA CORRER EL CONTENEDOR
   app:
     depends_on:
       - mysqldb
